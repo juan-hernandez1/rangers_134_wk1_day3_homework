@@ -169,8 +169,9 @@ a:active {
 
 article {
 background-color: white;
-
 }
+
+
 .Show-Dates {
     grid-area: Show-Dates;
     background: white;
@@ -230,4 +231,6 @@ button {
     height: 50px;
     width: 50px;
     margin-bottom: 20px;
+    background-color: gold;
+    font: bold;
 }
