@@ -3,7 +3,7 @@ body {
     background-color: black;
 }
 
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 2fr;
@@ -19,7 +19,7 @@ body {
         ". Show3 Show3 Show3 ."
         ". Show4 Show4 Show4 ."
         "Footer Footer Footer Footer .";
-}
+} */
 
 /* .container {
     display: grid;
@@ -39,7 +39,6 @@ ul {
 a {
     color: white;
     text-decoration: none;
-    
 }
 
 a:hover {
@@ -54,30 +53,28 @@ a:active {
     color: none;
 }
 
-.Nav-bar {
-    grid-area: Nav-bar;
-    color: white;
-
-}
 
 .Nav-bar {
-    display: inline-block;
-}
-
-/* .Nav-bar {
-    background: black;
+    /* grid-area: Nav-bar; */
     display: grid;
+    background: black;
+    color: white;
     grid-template-rows: auto;
     grid-template-columns: max-content auto max-content;
     grid-template-areas: "logo menus toggler";
-    justify-items: stretch;
-    align-items: stretch;
-    column-gap: 0px;
-  } */
+    justify-content: space-around;
+    font-size: large;
+    font-family: "Roboto";
+    /* justify-items: stretch; */
+    /* align-items: stretch; */
+    /* column-gap: 0px; */
+  }
 
 .brand-name {
-    /* grid-area: brand-name; */
-    width: 500px;
+    text-align: left;
+    font-size: xx-large;
+    font-family: "Roboto";
+
 }
 
 /* .links {
@@ -92,8 +89,6 @@ a:active {
     padding: 30px;
     margin-left: 20px;
     margin-top: 0;
-    
-
 }
 
 /* .Links a {
@@ -116,13 +111,13 @@ a:active {
     top: 50%;
     left: 50%;
     color: white;
-    font-size: 58px;
+    font-size: 120px;
     font-family: "Roboto";
     transform: translate(-50%, -50%);
 }
 
 article {
-background-color: white;
+    background-color: white;
 }
 
 
@@ -134,36 +129,27 @@ background-color: white;
     font-family: "Roboto";
     text-align: center;
     border: solid 1px black;
-    
-    
+
+
     /* position: absolute; */
     /* top: 65%;
     left: 50%; */
     /* transform: translate(-50%, -50%); */
+
+}
+
+.show-images {
+    display: flex;
+    align-self: center;
     
 }
 
-.Show1 {
-    grid-area: Show1;
+.Show {
+    display: flex;
     background: white;
-    /* border-bottom: solid 1px black; */
-}
-
-.Show2 {
-    grid-area: Show2;
-    background: white;
-    border-bottom: solid 1px black;
-}
-
-.Show3 {
-    grid-area: Show3;
-    background: white;
-    border-bottom: solid 1px black;
-}
-
-.Show4 {
-    grid-area: Show4;
-    background: white;
+    justify-content: space-around;
+    max-width: 70%;
+    margin-left: 13%;
     border-bottom: solid 1px black;
 }
 
@@ -172,7 +158,7 @@ p {
     font-family: "Roboto";
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
 h2 {
@@ -182,18 +168,18 @@ h2 {
 }
 
 button {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
     background-color: gold;
     font: bold;
 }
 
-.Footer {
+
+Footer {
     grid-area: Footer;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -202,6 +188,7 @@ button {
         "Map . . ."
         "Map . . ."
         "Map . . .";
+    margin-top: 5%;
 }
 
 
@@ -215,14 +202,8 @@ button {
     grid-area: Info;
     color: white;
     font-size: 30px;
-    font-family: "Roboto";
-    /* position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     list-style-type: none;
-    /* text-align: center; 
-    padding: 0; */
+    font-family: "Roboto";
     margin: 0;
 }
 
@@ -230,18 +211,23 @@ button {
     grid-area: Shows;
     color: white;
     font-size: 30px;
-    font-family: "Roboto";
     list-style-type: none;
-    /* text-align: center;  */
-    /* padding: 0 */
+    font-family: "Roboto";
 }
 
 .Social {
     grid-area: Social;
     color: white;
     font-size: 30px;
-    font-family: "Roboto";
     list-style-type: none;
-    /* text-align: center; 
-    padding: 0 */
+    font-family: "Roboto";
+}
+
+.footer-list {
+    margin-bottom: 15%;
+}
+
+.footer-icons {
+    height: 5%;
+    width: 5%;
 }
