@@ -153,6 +153,14 @@ article {
     border-bottom: solid 1px black;
 }
 
+.Show-4 {
+    display: flex;
+    background: white;
+    justify-content: space-around;
+    max-width: 70%;
+    margin-left: 13%;
+}
+
 p {
     font-size: 20px;
     font-family: "Roboto";
